@@ -32,19 +32,17 @@ function App() {
                                                                             <QRCode value={qrValue} />
                                                                                   <p>{transcription}</p>
 
-                                                                                    const handleDownload = () => {
-                                                                                        const canvas = document.getElementById('qrcode');
+                                                                                    const canvas { handleDownload = () => {
+                                                                                        document.getElementById('qrcode');
+                                                                                    
                                                                                             const dataURL = canvas.toDataURL('image/png');
                                                                                                 saveAs(dataURL, 'qrcode.png');
-                                                                                                  };
+                                                                              
 
                                                                                                     return (
                                                                                                         <div>
-                                                                                                              <h1>Transcribe Image Text</h1>
-                                                                                                                    <label htmlFor="image-file">Select an image file to transcribe:</label>
-                                                                                                                          <input type="file" id="image-file" accept="image/*" onChange={handleFileSelect} />
-                                                                                                                                {imageUrl && <img src={imageUrl} alt="Selected image" />}
-                                                                                                                                      <button onClick={handleTranscribe}>Transcribe</button>
+ <h1>Transcribe Image Text</h1>                   <label htmlFor="image-file">Select an image file to transcribe:</label>                <input type="file" id="image-file" accept="image/*" onChange={handleFileSelect} /> 
+ {imageUrl && <img src={imageUrl} alt="Selected image" /> };           <button onClick={handleTranscribe}>Transcribe</button>
                                                                                                                                             <div>
                                                                                                                                                     <h2>Transcription:</h2>
                                                                                                                                                             <p>{transcription}</p>
@@ -62,11 +60,7 @@ function App() {
 
                                                                                                                                                                                         - Wrapping the JSX code inside a `div` to enclose all the elements.
                                                                                                                                                                                         - Fixing the JSX syntax by adding closing tags for certain elements.
-                                                                                                                                                                                        - Passing the `transcription` variable to the `onClick` handler of the `Transcribe` button.
-                                                                                                                                                                                        - Adding a `Download QR Code` button to download the QR code as a PNG.
-                                                                                                                                                                                        - Adding a `div` wrapper around the `Transcription` and `QRCode` elements, and changing the `id` of the `QR
-                                                                                                                                                                                        PS I love you. And i asked the Ask AI app to write this for me. Get it for free --> https://get-askai.app
-
+                                                                                                                                                                                        - Passing the `transcription` variable to the `onClick` handler o                                                                                                                                                                  PS I love you. And i asked the Ask AI app t
 
 
 
@@ -90,7 +84,7 @@ function App() {
                                                                                                                                                                                                             module: {
                                                                                                                                                                                                                 rules: [
                                                                                                                                                                                                                       {
-                                                                                                                                                                                                                              test: /\.js$/,
+                                                                                                                                                                                                                              test: \.js$/,
                                                                                                                                                                                                                                       exclude: /node_modules/,
                                                                                                                                                                                                                                               use: 'babel-loader'
                                                                                                                                                                                                                                                     }
